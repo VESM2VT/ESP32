@@ -28,7 +28,7 @@
 
 ## Halló heimur (blikk) í MicroPython
 
-Smelltu á hamborgara táknið sem er við *MycroPython device* og veldur *New file...*. Gefðu skránni nafnið `main.py` (skráin verður að heita main.py). Settu svo eftirfarandi kóða í main.py:
+Smelltu á hamborgara táknið sem er við *MycroPython device* og veldu *New file...*. Gefðu skránni nafnið `main.py` (skráin verður að heita main.py). Settu svo eftirfarandi kóða í main.py:
 ```python
 # Notum Pin úr machine kóðasafninu til að skilgreina pinnana á ESP. 
 from machine import Pin
