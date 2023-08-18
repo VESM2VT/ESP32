@@ -1,0 +1,57 @@
+# Tímaverkefni 0
+
+- 0% af heildareinkunn
+- einstaklingsverkefni
+
+## Uppsetning á umhverfi fyrir ESP32
+
+1. Sæktu og settu upp hjá þér CH343 rekilinn (e. driver) fyrir ESP32 á tölvuna þína. Þú finnur rekilinn [hér](https://www.wch-ic.com/search?t=all&q=ch343) (CH343SER.EXE fyrir Window, CH343Ser_MAC.ZIP fyrir MacOs). :exclamation: Endurræstu svo tölvuna þína. :exclamation:
+   1. ATH. fyrir linux sjá [hér](https://github.com/Freenove/Freenove_Ultimate_Starter_Kit_for_ESP32_S3/tree/main/CH343/Linux/ch343ser_linux).
+1. Sæktu og settu upp hjá þér nýjustu útgáfuna af Thonny, sjá [hér](https://thonny.org).
+1. Settu ESP32-S3 stýritölvuna í samband við tölvuna þína með USB.
+1. Ræstu upp Thonny.
+   1. Í Thonny veldu *Run* og svo *Configure interpreter...*
+   
+        ![thonny01](../myndir/thonny_01.png)
+   1. Veldu svo *Interpreter* flipann og veldu þar eftirfarandi:
+
+        ![thonny02](../myndir/thonny_02.png)
+   1. Gerðu eftirfarandi stillingar í glugganum sem birtist og smelltu svo á *Install* takkann.
+
+        ![thonny03](../myndir/thonny_03.png)
+   1. Uppsetningin getur tekið örfáar mínútur. En þegar stendur *Done* er óhætt að smella á *Close* takkann á glugganum. Og síðan á *OK* á næsta glugga.
+
+        ![thonny04](../myndir/thonny_04.png)
+1. Ef allt hefur gengið eins og í sögu þá ætti Thonny að líta svona út hjá þér:
+   
+    ![thonny05](../myndir/thonny_05.png)
+
+## Halló heimur (blikk) í MicroPython
+
+Smelltu á hamborgara táknið sem er við *MycroPython device* og veldur *New file...*. Gefðu skránni nafnið `main.py` (skráin verður að heita main.py). Settu svo eftirfarandi kóða í main.py:
+```python
+# Notum Pin úr machine kóðasafninu til að skilgreina pinnana á ESP. 
+from machine import Pin
+# Notum svo sleep_ms til að láta forritið bíða
+from time import sleep_ms
+
+# Búum til breytuna led og tengjum hana við pinna 2 á ESP. Segjum að pinninn sé úttakspinni
+# Pinni 2 er tengdur við led peru sem er innbyggð í ESP
+led = Pin(2, Pin.OUT)
+
+# Gerum lykkju sem keyrir að eilífu
+while True:
+    # Skrifum 3.3V út á pinna 2
+    led.value(1)
+    # Bíðum í 500 millisekúndur
+    sleep_ms(500)
+    # Skrifum 0V út á pinna 2
+    led.value(0)
+    # Bíðum aftur í 500 millisekúndur
+    sleep_ms(500)
+```
+Smelltu svo á græna "play" takkann til að keyra forritið.
+
+Ef ekkert óvænt hefur gerst ættir þú að sjá led peru á ESP blikka.
+
+Til að stöðva forritið skaltu smella með músinni í Shell/REPL svæðið í Thonny og ýta svo á <kbd>Ctrl</kbd> + <kbd>C</kbd>.
