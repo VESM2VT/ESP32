@@ -6,6 +6,23 @@ from time import sleep_ms, sleep_us, ticks_ms, ticks_diff
 class SevenSeg():
     """
     SevenSeg klasinn sem um virkni SevenSegment skjásins.
+    
+    Tengingar (5611AB):
+
+        G F J A B
+    
+        E D J C P      J = jörð = GND
+
+         aaaa
+        f    b
+        f    b
+        f    b
+         gggg 
+        e    c
+        e    c
+        e    c
+         dddd  dp
+    
     """
     def __init__(self, a: int, b: int, c: int, d: int, e: int, f: int, g: int, dp: int, common_cathode: bool = False):
 
