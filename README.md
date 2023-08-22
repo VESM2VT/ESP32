@@ -2,6 +2,7 @@
 
 - [Uppsetning á ESP](https://github.com/VESM2VT/ESP32/blob/main/verkefni/Timaverkefni0.md)
 - [Stafræn gildi](https://github.com/VESM2VT/ESP32/blob/main/kennsluefni/digital.md)
+- [Hliðræn gildi](./kennsluefni/analog.md)
 
 ---
 
