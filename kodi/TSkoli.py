@@ -38,6 +38,7 @@ class SevenSeg():
 
         if isinstance(tala, str):
             tala = int(tala, 16)
+        tala %= 16
         for i, pinni in enumerate(self.hw_pinnar):
             pinni.value((self.hex_tolur[tala] >> (7 - i) & 1))
         self.hw_pinnar[0].value(not punktur if not self.common_cathode else punktur)
