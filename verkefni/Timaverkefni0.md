@@ -5,7 +5,7 @@
 
 ## Uppsetning á umhverfi fyrir ESP32
 
-1. Sæktu og settu upp hjá þér CH343 rekilinn (e. driver) fyrir ESP32 á tölvuna þína. Þú finnur rekilinn [hér](https://www.wch-ic.com/search?t=all&q=ch343) (CH343SER.EXE fyrir Window, CH343Ser_MAC.ZIP fyrir MacOs). :exclamation: Endurræstu svo tölvuna þína. :exclamation:
+1. Sæktu og settu upp hjá þér CH343 rekilinn (e. driver) fyrir ESP32 á tölvuna þína. Þú finnur rekilinn [hér](https://www.wch-ic.com/search?t=all&q=ch343) (CH343SER.EXE fyrir Window, CH34XSER_MAC.ZIP fyrir MacOs). :exclamation: Endurræstu svo tölvuna þína. :exclamation:
    1. ATH. fyrir linux sjá [hér](https://github.com/Freenove/Freenove_Ultimate_Starter_Kit_for_ESP32_S3/tree/main/CH343/Linux/ch343ser_linux).
 1. Sæktu og settu upp hjá þér nýjustu útgáfuna af Thonny, sjá [hér](https://thonny.org).
 1. Settu ESP32-S3 stýritölvuna í samband við tölvuna þína með USB.
