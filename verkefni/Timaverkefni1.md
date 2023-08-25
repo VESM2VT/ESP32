@@ -31,7 +31,7 @@ Til umhugsunar: Hvort er þitt 7-Segment Display *common anode* eða *common cat
 
 ## 2. Teningur (40%)
 
-1. Bættu núna takka við rásina úr lið eitt og forritaðu svo tenging. Þegar ýtt er í takkann á að koma upp tala sem valin er af handahófi (e. random). Talan á svo að standa á 7-Segment skjánum þar til ýtt er aftur á takkan og þá á ný tala að birtast.
+1. Bættu núna takka við rásina úr lið eitt og forritaðu svo tening. Þegar ýtt er í takkann á að koma upp tala sem valin er af handahófi (e. random). Talan á svo að standa á 7-Segment skjánum þar til ýtt er aftur á takkan og þá á ný tala að birtast.
 
 ---
 
@@ -68,7 +68,7 @@ Kynntu þér hvernig 7-Segment með fjórum tölustöfum virkar með horfa á þ
         teljari += 1
         sleep_ms(1000)
     ```
-2. Þetta virkar ekki vel. Ástæðan fyrir því er að `sleep_ms` stoppar forritið í ákveðinn tíma og við viljum ekki að forritið okkar stoppi. Við verðum því að nota einhverja aðra aðferð. Sú aðferð gengur út á að í stað þess að bíða í t.d. eina sekúndu eins og gert er hér þá spyrjum við hvort ein sekúnda er liðin frá því að við gerðu eitthvað síðast. Breittu nú forritinu þannig að það verði svona:
+2. Þetta virkar ekki vel. Ástæðan fyrir því er að `sleep_ms` stoppar forritið í ákveðinn tíma og við viljum ekki að forritið okkar stoppi. Við verðum því að nota einhverja aðra aðferð. Sú aðferð gengur út á að í stað þess að bíða í t.d. eina sekúndu eins og gert er hér þá spyrjum við hvort ein sekúnda er liðin frá því að við gerðu eitthvað síðast. Breyttu nú forritinu þannig að það verði svona:
     ```python
     from TSkoli import FourSevenSeg
     from time import ticks_ms 
