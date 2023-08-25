@@ -25,7 +25,14 @@
 1. Ef allt hefur gengið eins og í sögu þá ætti Thonny að líta svona út hjá þér:
    
     ![thonny05](../myndir/thonny_05.png)
-
+1. Ef þú fékkst upp villur þegar þú reyndir að setja micropython inn á ESP þá skaltu gera eftirfarandi, hafðu kveikt á Thonny:
+   1. Farðu [hingað](https://github.com/Freenove/Freenove_Ultimate_Starter_Kit_for_ESP32_S3/tree/main/Python/Python_Firmware) og sæktu (download) `.py` skrána sem á við þitt stýrikerfi ásamt því að sækja skrána sem er með endinguna `.bin`.
+   1. Opnaðu skipanalínuna (*powershell* í windows, *terminal* í MacOS og Linux) á fartölvunni þinni og færðu þig í möppuna sem þú sóttir skrárnar í lið 1.
+     1. Ef skrárnar eru í *Downloads* möppunni má gera eftirfarandi í skipanalínunni til að færa sig þangað: 
+         - Windows: `cd ~\Downloads`
+         - MacOS/Linux: `cd ~/Downloads`
+     1. Keyrðu svo þaðan eftirfarandi skipunina `python3 ÞITT_STYRIKERFI.py`
+     1. Hinkraðu meðan að keyrslan klárast og smelltu svo á rauða STOP takkann í Thonny og sjáðu hvort þetta er ekki bara komið inn.
 ## Halló heimur (blikk) í MicroPython
 
 Smelltu á hamborgara táknið sem er við *MycroPython device* og veldu *New file...*. Gefðu skránni nafnið `main.py` (skráin verður að heita main.py). Settu svo eftirfarandi kóða í main.py:
