@@ -11,7 +11,7 @@ Hér er [myndband](https://youtu.be/WxJKXGugfh8?t=29) sem skýrir muninn á anal
 
 ---
 
-### Skynjarar
+## Skynjarar
 
 Hliðræn vinnsla merkja byggist á eðlisfræðilegum eiginleikum íhlutanna í tækinu, sér í lagi samhengi spennu og straums. Með þeim hætti þróuðust tækjaeiningar eins og; síur, magnarar, skynjarar og mótarar.
 
@@ -21,7 +21,7 @@ Hér er grein sem fjallar nánar um [analog og digital skynjara](https://iot4beg
 
 ---
 
-### Stafræn- og hliðræn merkjavinnsla (ADC og DAC)
+## Stafræn- og hliðræn merkjavinnsla (ADC og DAC)
 
 Hliðrænt merki sem tekur samfelldum breytingum rennir sér í gegn um óendanlega mörg mæligildi. Augljóslega er ekki vinnandi vegur að skrá þau öll. Því hraðari sem breytingarnar á hliðræna merkinu eru, því styttra þarf að líða á milli þess að sýni séu tekin. Sýnataka et gerð með jöfnu millibili, öllum gildum merkisins þar á milli er fleygt. <br>
 
