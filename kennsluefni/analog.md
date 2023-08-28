@@ -35,16 +35,16 @@ aftur hliðrun í spennu og straumi.
 
 ## Unnið með hliðræn gildi í ESP32
 
-### Skrifað
+### Skrifað á pinna
 
 ESP32 notar það sem heitir púlsbreiddarmótun (e. pulse width modulation (PWM), sjá nánar [hér](https://en.wikipedia.org/wiki/Pulse-width_modulation)) til að búa til hliðræn merki. 
 
-Merkið sem PWM getur gefið út er með styrkinn frá 0V og til 3.3V. Og er það stillt í kóðanum með því að breyta því sem heitir [duty cycle](https://en.wikipedia.org/wiki/Pulse-width_modulation#Duty_cycle) sem er á bilinu 0 til og með 1023. Pinni sem á að skrifa út hliðrænt merki er skilgreindur með `PWM(Pin(PINNINN_SEM_A_AD_NOTA), TIDNIN_A_PWM)`. Dæmi:
+Merkið sem PWM getur gefið út er með styrkinn frá 0V og til 3.3V, **0V er 0 og 3.3V er 1023**. Og er það stillt í kóðanum með því að breyta því sem heitir [duty cycle](https://en.wikipedia.org/wiki/Pulse-width_modulation#Duty_cycle) sem er á bilinu 0 til og með 1023. Pinni sem á að skrifa út hliðrænt merki er skilgreindur með `PWM(Pin(PINNINN_SEM_A_AD_NOTA), TIDNIN_A_PWM)`. Dæmi:
 
 ```python
 from machine import Pin, PWM
 
-pwm = PWM(Pin(2), 10000) # Í þessum áfanga getum við alltaf haft tíðnina 10000
+pwm = PWM(Pin(47), 10000) # Í þessum áfanga getum við alltaf haft tíðnina 10000
 
 # fallið duty notað til að stilla styrkinn á merkinu
 pwm.duty(0) # skrifar út 0V
@@ -52,9 +52,15 @@ pwm.duty(511) # skrifar út 1.65V
 pwm.duty(1023) # skrifar út 3.3V
 ```
 
-### Lesið
+#### Verkefni - Andandi LED
 
-ESP32-S3 er með 18 pinna sem getið **lesið** hliðræn (e. analog) gildi inn. Þessum pinnum er skipt í tvo hópa ADC1 og ADC2. ADC stendur fyrir **A**nalog-**D**igital-**C**onverter. Sjálfgefið eru pinnarnir stilltir á 12 bita nákvæmni þannig að gildin sem lesin eru geta verið frá 0 til og með 4095, þar sem 0 er 0V og 4095 er 3,3V miðað við 11dB mögnun en þegar ADC pinni er skilgreindur þarf alltaf að taka fram hvaða mögnun á að nota.
+Tengdu eina LED peru við ESP (muna eftir viðnáminu) og forritaðu hana svo þannig að birtan smá aukist þar til fullum styrk (1023) er náð og þá á birtan að minnka þar ljósið slokknar (0). Þetta á svo að endurtaka sig í sífellu. ATH. leystu þetta með því að nota aðeins eina lykkju (`while True:` lykkjuna). Hafðu smá `sleep` í lykkjunni (1 eða 2 millisekúndur).
+
+Til umhugsunar: Hvað gerist ef meira en 1023 eða minna en 0 er skrifað á PWM pinna?
+
+### Lesið frá pinna
+
+ESP32-S3 er með 18 pinna sem getið **lesið** hliðræn (e. analog) gildi inn. Þessum pinnum er skipt í tvo hópa ADC1 og ADC2. ADC stendur fyrir **A**nalog-**D**igital-**C**onverter. Sjálfgefið eru pinnarnir stilltir á 12 bita nákvæmni þannig að gildin sem lesin eru geta verið **frá 0 til og með 4095**, þar sem 0 er 0V og 4095 er 3,3V miðað við 11dB mögnun en þegar ADC pinni er skilgreindur þarf alltaf að taka fram hvaða mögnun á að nota.
 
 Pinnarnir í ADC1 eru pinnar **1** til og með **10** en pinnarnir í ADC2 eru pinnar **11** til og með **18**.
 
@@ -71,3 +77,13 @@ pinni = ADC(Pin(1), atten=ADC.ATTN_11DB)
 # sjálfgefið eru ADC 12 bita og gefa því gildi á bilinu 0 til og með 4095
 gildi = pinni.read()
 ```
+
+#### Verkefni I - Ljósmagni stjórnað með stilliviðnámi
+
+Settu upp þessa [rás](../myndir/pwm_adc_stillivinam_led.png) og  forritaðu þannig að stilliviðnámið stjórni birtumagninu á LED perunni. 
+
+:exclamation: Gildið sem þú lest frá stilliviðnáminu er frá 0 til og með 4095 en gildin sem þú skrifar á LED peruna verða að vera frá 0 til og með 1023.  
+
+#### Verkefni II - Stilliviðnám stjórnar hvaða LED er kveikt
+
+Bættu tveimur LED perum við rásina hér að ofan og forritaðu hana svo þannig að staðan á stilliviðnáminu stjórnar á hvaða LED peru er kveikt, það á bara að vera kveikt á einni LED peru í einu. Ef stilliviðnámið er stillt til hægri á að vera kveikt á perunni sem er lengst til hægri, ef stilliviðnámið er ca. í miðri stöðu á að vera kveikt á miðjuljósinu og ef stilliviðnámið er til vinstri á að vera kveikt á perunni sem er lengst til vinstri.
