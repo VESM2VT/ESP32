@@ -83,7 +83,3 @@ gildi = pinni.read()
 Settu upp þessa [rás](../myndir/pwm_adc_stillivinam_led.png) og  forritaðu þannig að stilliviðnámið stjórni birtumagninu á LED perunni. 
 
 :exclamation: Gildið sem þú lest frá stilliviðnáminu er frá 0 til og með 4095 en gildin sem þú skrifar á LED peruna verða að vera frá 0 til og með 1023.  
-
-#### Verkefni II - Stilliviðnám stjórnar hvaða LED er kveikt
-
-Bættu tveimur LED perum við rásina hér að ofan og forritaðu hana svo þannig að staðan á stilliviðnáminu stjórnar á hvaða LED peru er kveikt, það á bara að vera kveikt á einni LED peru í einu. Ef stilliviðnámið er stillt til hægri á að vera kveikt á perunni sem er lengst til hægri, ef stilliviðnámið er ca. í miðri stöðu á að vera kveikt á miðjuljósinu og ef stilliviðnámið er til vinstri á að vera kveikt á perunni sem er lengst til vinstri.
