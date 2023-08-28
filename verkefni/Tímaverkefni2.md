@@ -12,11 +12,13 @@
 Gerðu eftirfarandi:
 
 1. Lóða víra á mótorana í bílasettinu (klippa male-female víra til að lóða á dc motora, ekki snúa uppá vír).
-1. Lóða víra á 4-battery hólfið
-2. Lóða header-a á TB6612FNG mótorstýringuna
+1. Lóða víra á 4-battery hólfið.
+2. Lóða header-a á TB6612FNG mótorstýringuna.
 3. Festu mótorana (láta málmhuta vísa aftur) á bílagrindina (boltahaus er að innanverðu).
-4. Festu rafhlöður við grind og mótorstýringu á brauðbretti
-5. Festu 9V batterí og lóðaðu við on/off takkann. 
+4. Festu rafhlöður við grind og mótorstýringu á brauðbretti.
+5. Festu 9V batterí og lóðaðu (það má líka skoða að setja tengi) við on/off takkann. 
+
+:safety_vest: Mundu að setja herpihólka allsstaðar það sem það á við.
 
 ---
 
