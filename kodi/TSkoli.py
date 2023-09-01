@@ -1,7 +1,7 @@
 # Klasar og föll fyrir ESP
 
 from machine import Pin
-from time import sleep_ms, sleep_us, ticks_ms, ticks_diff
+from time import sleep_ms, sleep_us, ticks_ms, ticks_us, ticks_diff
 
 class SevenSeg():
     """
@@ -130,7 +130,7 @@ class FourSevenSeg():
         # finna staðsetningu punkts eða punkta
         punktar = [i for i, p in enumerate(strengur) if p in(".,")]
         punktar = [i // 2 for i in punktar]
-        assert len(punktar) < 2, f"{strengur} inniheldur {len(strengur)} punkta en má bara innihalda núll eða einn!!!!"
+        assert len(punktar) < 2, f"{strengur} inniheldur {len(punktar)} punkta en má bara innihalda núll eða einn!!!!"
         
         for nr, stafur in enumerate(strengur):
             #self.allt_slokkt()
@@ -157,6 +157,26 @@ def varpa(gildi, inn_laggildi, inn_hagildi, ut_laggildi, ut_hagildi):
 def klemma(gildi, laggildi, hagildi):
     return max(laggildi, min(gildi, hagildi))
 
+class Ultrasonic():
+    def __init__(self, trig_pinni, echo_pinni):
+        self.trig = Pin(trig_pinni, Pin.OUT)
+        self.echo = Pin(echo_pinni, Pin.IN)
+        
+    def maela(self) -> int:
+        self.trig.value(1)
+        sleep_us(10)
+        self.trig.value(0)
+        
+        while not self.echo.value(): 
+            pass 
+        
+        upphafstimi = ticks_us()
+        
+        while self.echo.value(): 
+            pass 
+                
+        return int(ticks_diff(ticks_us(), upphafstimi) * 340 / 2 / 10000)
+
 class Sofa(): 
     def __init__(self, svefntimi=1000):
         self.svefntimi = svefntimi
@@ -168,6 +188,7 @@ class Sofa():
             self.lidinn_timi = timi_nuna
             return True
         return False
+
 
 
 
