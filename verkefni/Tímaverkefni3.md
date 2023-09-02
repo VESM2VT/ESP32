@@ -10,13 +10,16 @@
 ## HC-SR04 Ultrasonic Sensor
 
 Kynntu þér hvernig HC-SR04 Ultrasonic Sensor virkar með því að lesa [þessa grein](https://lastminuteengineers.com/arduino-sr04-ultrasonic-sensor-tutorial/) (lestu **að** *Wiring – Connecting HC-SR04 to Arduino Uno*).
-Tengdu HC-SR04 við ESP32 og skoðaðu eftirfarandi:
+Tengdu HC-SR04 við ESP32 og skoðaðu kóðann hér fyrir neðan:
+
+![ultrasonic](https://raw.githubusercontent.com/VESM2VT/ESP32/main/myndir/ultrasonic.png)
+
 ```python
 from machine import Pin
 from time import sleep_ms, sleep_us, ticks_us, ticks_diff
 
-trig = Pin(13, Pin.OUT)
-echo = Pin(12, Pin.IN)
+echo = Pin(47, Pin.IN)
+trig = Pin(48, Pin.OUT)
 
 def maela_fjarlaegd():
     # Sendum 10 míkrosekúndna púls
@@ -59,11 +62,7 @@ while True:
     sleep_ms(500)
 ```
 
-## Verkefni 1 (40%) - Rafrænt málband
-
-Settu upp rásina sem þú gerðir í [lið 3](https://github.com/VESM2VT/ESP32/blob/main/verkefni/Timaverkefni1.md#3-7-segment-fjórir-tölustafir-10) í Tímaverkefni 1. Bættu Ultrasonic skynjaranum við rásina forritaðu rásina svo þannig að fjarlægðin sem skynjarinn mælir sé birt í sentimetrum á SevenSegment skjánum. 
-
-## Verkefni 2 (60%) - Nálægðarskynjari
+## Verkefni 1 (50%) - Nálægðarskynjari
 
 Settu upp rás með Ultrasonic skynjaranum, þremur LED og hátalara (active buzzer, hægt að meðhöndla eins og LED peru nema það þarf ekki viðnám). Skrifaðu svo forrit fyrir rásina sem útfærir virknina í töflunni hér að neðan:
 
@@ -75,6 +74,18 @@ Fjarlægð í cm. | LED 1 | LED 2 | LED 3 | Hátalari
 40 - 60 | kveikt | kveikt | kveikt  | ekkert hljóð
 minna en 40 | kveikt | kveikt | kveikt  | hljóð
 
+## Verkefni 2 (50%) - Rafrænt málband með minni
+
+Settu upp rásina sem þú gerðir í [lið 3](https://github.com/VESM2VT/ESP32/blob/main/verkefni/Timaverkefni1.md#3-7-segment-fjórir-tölustafir-10) í Tímaverkefni 1. Bættu Ultrasonic skynjaranum við rásina forritaðu rásina svo þannig að fjarlægðin sem skynjarinn mælir sé birt í sentimetrum á SevenSegment skjánum. Mældu fjarlægðina á 100 ms. fresti (nota `ticks_ms`). Bættu takka við rásina, þegar ýtt er á hann frýs mælingin þar til aftur er ýtt á takkann (muna eftir *debounce*). Þegar ýtt er á takkann til að frysta mælinguna á sú tala sem mælingin sýnir að bætast í lista og þegar fimm mælingar eru komnar í listann á að skrifa listann snyrtilega á skjáinn á fartölvunni þinni (með `print`) og listinn á að tæmast. Passaðu að mælingin skráist bara í listann þegar mælingin er fryst en ekki þegar hún er af-fryst. Dæmi um úttak:
+
+```
+Mæling nr. 1: 134 cm.
+Mæling nr. 2: 123 cm.
+Mæling nr. 3: 47 cm.
+Mæling nr. 4: 156 cm.
+Mæling nr. 5: 39 cm.
+```
+
 ---
 
 ## Námsmat og skil
@@ -82,4 +93,3 @@ minna en 40 | kveikt | kveikt | kveikt  | hljóð
 - Yfirferð og námsmat á sér stað í tíma. 
 - Fyrir hvern lið er gefið heilt fyrir fullnægjandi lausn, hálft ef lausn er ábótavant, ekkert ef lausn er stórlega ábótavant eða vantar.
 - Skilaðu á Innu kóðalausnum.
-
