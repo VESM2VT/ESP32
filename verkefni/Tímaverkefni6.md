@@ -17,7 +17,7 @@ Hannaðu fjarstýringu fyrir bílinn (snúra og þráðlaus möguleiki). Notaðu
 - [Stýripinna](https://lastminuteengineers.com/joystick-interfacing-arduino-processing/) sem þarf að aðlaga að fjarstýringu:
     - hýsing fyrir stýripinna [(glært box)](https://www.thingiverse.com/thing:1162200)
     - hýsing fyrir stýripinna Keyestudio [(grænt box)](https://github.com/VESM2VT/Efni/blob/main/Myndir/Fjarstyring.stl). 
-- Lítið breadboard fyrir tengingar á GND og 5V.
+- Lítið breadboard fyrir tengingar á GND og 3V.
 - Lokið er 3mm á þykkt og skorið út í plexigler, aftan á fjarstýringu og fellt inn.
 
 <!--  [MPU-6050 (gyro)](https://lastminuteengineers.com/mpu6050-accel-gyro-arduino-tutorial/) -->
