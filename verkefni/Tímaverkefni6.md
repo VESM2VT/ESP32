@@ -20,6 +20,8 @@ Hannaðu fjarstýringu fyrir bílinn (snúra og þráðlaus möguleiki). Notaðu
 - Lítið breadboard fyrir tengingar á GND og 3V.
 - Lokið er 3mm á þykkt og skorið út í plexigler, aftan á fjarstýringu og fellt inn.
 
+[Hér](https://github.com/VESM2VT/ESP32/blob/main/myndir/fjarstyring_h23.png) er mynd sem sýnir hvaða íhlutir eiga að vera í fjarstýringunni og hvernig þeir tengjast saman. 
+
 <!--  [MPU-6050 (gyro)](https://lastminuteengineers.com/mpu6050-accel-gyro-arduino-tutorial/) -->
 <!-- Toggle switch](https://www.switchelectronics.co.uk/on-off-spst-toggle-switch-250v-ac-15a) -->
 
