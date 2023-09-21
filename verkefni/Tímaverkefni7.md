@@ -145,7 +145,7 @@ def afram(hradi):
     z_sidast = z        
 ``` 
 
-## ADXL345 hröðunarmælir
+## ADXL345 hröðunarmælir EF ÞIÐ EIGIÐ ANNARS SLEPPA
 
 Kynntu þér ADXL345 hröðunarmælinn með því að lesa þessa [grein](https://how2electronics.com/interfacing-adxl345-accelerometer-with-raspberry-pi-pico/). 
 
