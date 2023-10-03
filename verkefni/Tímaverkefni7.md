@@ -128,7 +128,8 @@ def afram(hradi):
     # síðan í stað pwmA.duty(hradi) og pwmB.duty(hradi) kæmi:
     global z_sidast
     _, _, z = mpu.MPU_Get_Gyroscope()
-    z /= 131
+    z -= mz # kvörðunin úr verkefni 3 hér fyrir ofan
+    z //= 131
     if z == z_sidast:
         # keyra beint áfram
         pwmA.duty(hradi)
