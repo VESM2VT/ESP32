@@ -5,9 +5,9 @@
 Tengdu stýripinnann þinn við ESP-inn á eftirfarandi hátt.
 1. GND tengist í GND
 2. :warning: 5V tengist í 3,3V :warning:
-3. VRX tengist í pinna 9
-4. VRY tengist í pinna 8
-5. SW tengist í pinna 7
+3. (X)VRX tengist í pinna 9
+4. (Y)VRY tengist í pinna 8
+5. B(SW) tengist í pinna 7
 
 Settu svo upp eftirfarandi kóða:
 ```python
