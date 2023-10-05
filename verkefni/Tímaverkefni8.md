@@ -73,7 +73,7 @@ Endurtaktu svo lið 7 fyrir hinn ESP-inn þinn.
 
 ### Hafa tvo Thonny glugga opna í einu
 
-Í Thonny skaltu fara í Preferences og taka hakið úr *Allow only single Thonny instance*. Þá getur þú opnað tvo Thonny glugga. Á Mac þarf að opna glugga nr. 2 með því að fara í terminal og skrifa eftirfarandi: `open -n -a Thonny.app`
+Í Thonny skaltu fara í Tools->Options og taka hakið úr *Allow only single Thonny instance*. Þá getur þú opnað tvo Thonny glugga. Á Mac þarf að opna glugga nr. 2 með því að fara í terminal og skrifa eftirfarandi: `open -n -a Thonny.app`
 
 ### Finna MAC addressu á ESP32
 
