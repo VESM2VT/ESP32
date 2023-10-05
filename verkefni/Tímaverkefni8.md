@@ -60,7 +60,7 @@ Til að geta notað ESPnow þarf að setja inn sérstaka útgáfu af python á E
 4. Næst þarftu að afrita bin skrána í Python_Firmware möppuna úr lið 2.
 5. Í Python_Firmware möppunni skaltu opna .py skrána sem heitir eftir stýrikerfinu þínu með uppáhalds ritlinum (e. editor) þínum.
 6. Breyttu línu 7 í .py skránni þannig að í stað `GENERIC_S3-20220618-v1.19.1.bin` komi `firmware-esp32-GENERIC_S3.bin`.
-7. Opnaðu svo skipanalínu (e. comman line) í Python_Firmware möppunni og keyrðu eftirfarandi:
+7. Opnaðu svo skipanalínu (e. comman line) í Python_Firmware möppunni og keyrðu eftirfarandi (passaðu að Thonny sé ekki keyrandi):
 ```bash
 python3 NAFNIÐ_Á_STÝRIKERFINU_ÞÍNU.py
 # eða
