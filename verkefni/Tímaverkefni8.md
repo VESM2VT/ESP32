@@ -53,7 +53,7 @@ Til að geta notað ESPnow þarf að setja inn sérstaka útgáfu af python á E
 
 :warning: Áður en þú setur nýtt python á ESP-ana þína skaltu passa að taka afrit af öllum python skrám sem eru á þeim. Þeim verður eytt í ferlinu hér á eftir. :warning:
 
-1. Byrjaðu á að sækja [þessa](https://github.com/Freenove/Freenove_ESP32_S3_WROOM_Board.git) github geymslu (e. repository). Smella á græna "<> Code" takkann og velja "Download ZIP" og afþjappaðu svo ZIP skránni. 
+1. Byrjaðu á að sækja [þessa](https://github.com/Freenove/Freenove_ESP32_S3_WROOM_Board.git) github geymslu (e. repository). Smella á græna "<> Code" takkann og velja "Download ZIP" og **afþjappaðu** (e. extract) svo ZIP skránni. 
 2. Opnaðu afþjöppuðu möppuna í File Explorer og farðu í Python möppuna sem þú sér þar, þaðan í Python_Firmware möppuna.
 3. Sæktu svo [þessa](https://github.com/glenn20/micropython-espnow-images/blob/main/20220709_espnow-g20-v1.19.1-espnow-6-g44f65965b/firmware-esp32-GENERIC_S3.bin) skrá.
     ![firmware](https://raw.githubusercontent.com/VESM2VT/ESP32/main/myndir/saekja_firmware.png)
