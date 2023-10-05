@@ -147,5 +147,5 @@ Breyttu kóðanum hér fyrir ofan þannig að sendandinn sendir tvær handahófs
 
 Kynntu þér hvernig DHT11 (hita og rakamælir) virkar með því að skoða kafla 24 í "Bókinni" sem þú finnur undir Efni á Innu. Þú finnur **dht** klasann [hér](https://github.com/Freenove/Freenove_Ultimate_Starter_Kit_for_ESP32_S3/blob/main/Python/Python_Libraries/dht.py).
 
-Tengdu svo DHT11 við sendi ESP-inn og sendu svo mælingarnar yfir á hinn. Tengdu LCD skjáinn sem þú notaðir í [Tímaverkefni 7](https://github.com/VESM2VT/ESP32/blob/main/verkefni/T%C3%ADmaverkefni7.md) við móttöku ESP-inn og birtu mælingarnar frá DHT-11 á honum.
+Tengdu svo DHT11 við sendi ESP-inn og sendu svo mælingarnar yfir á hinn. Tengdu LCD skjáinn sem þú notaðir í [Tímaverkefni 7](https://github.com/VESM2VT/ESP32/blob/main/verkefni/T%C3%ADmaverkefni7.md) við móttöku ESP-inn og birtu mælingarnar frá DHT-11 á honum. Ef LCD skjárinn var með leiðindi við þig í verkefni 7, birtu mælingarnar þá bara á tölvuskjánum þínum.
 
