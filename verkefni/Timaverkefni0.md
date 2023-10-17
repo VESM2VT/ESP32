@@ -16,7 +16,7 @@
    1. Veldu svo *Interpreter* flipann og veldu þar eftirfarandi:
 
         ![thonny02](../myndir/thonny_02.png)
-   1. Gerðu eftirfarandi stillingar í glugganum sem birtist og smelltu svo á *Install* takkann.
+   1. Gerðu eftirfarandi stillingar í glugganum sem birtist og smelltu svo á *Install* takkann. Passaðu að velja alltaf nýjustu útgáfuna (e. version).
 
         ![thonny03](../myndir/thonny_03.png)
    1. Uppsetningin getur tekið örfáar mínútur. En þegar stendur *Done* er óhætt að smella á *Close* takkann á glugganum. Og síðan á *OK* á næsta glugga.
@@ -27,14 +27,20 @@
     ![thonny05](../myndir/thonny_05.png)
 1. Ef þú fékkst upp villur þegar þú reyndir að setja micropython inn á ESP þá skaltu gera eftirfarandi, hafðu kveikt á Thonny:
    1. Sæktu [þessa](https://github.com/Freenove/Freenove_Ultimate_Starter_Kit_for_ESP32_S3/archive/refs/heads/main.zip) .zip skrá og **afþjappaðu** hana (:exclamation:það er ekki nóg að tvísmella á hana, það þarf að hægrismella og velja *Extract all* eða annað álíka).
-   2. Opnaðu skipanalínuna (*powershell* í windows, *terminal* í MacOS og Linux) á fartölvunni þinni og færðu þig í möppuna sem þú afþjappaðir skrána í lið 1.
+   2. Sæktu svo [þessa](https://micropython.org/resources/firmware/ESP32_GENERIC_S3-20231005-v1.21.0.bin) skrá og settu hana í `Freenove_Ultimate_Starter_Kit_for_ESP32_S3/Python/Python_Firmware/` möppuna.
+   3. Opnaðu skipanalínuna (*powershell* í windows, *terminal* í MacOS og Linux) á fartölvunni þinni og færðu þig í möppuna sem þú afþjappaðir skrána í lið 1.
      1. Ef skráin er í *Downloads* möppunni má gera eftirfarandi í skipanalínunni til að færa sig þangað: 
          - Windows: `cd ~\Downloads`
          - MacOS/Linux: `cd ~/Downloads`
-     1. Færðu þig svo í skipanalínunni í möppuna `Freenove_Ultimate_Starter_Kit_for_ESP32_S3/Python/Python_Firmware/`.
-     1. Keyrðu svo þaðan eftirfarandi skipunina `python3 ÞITT_STYRIKERFI.py`
+     2. Færðu þig svo í skipanalínunni í möppuna `Freenove_Ultimate_Starter_Kit_for_ESP32_S3/Python/Python_Firmware/`.
+     3. Opnaðu `ÞITT_STYRIKERFI.py` skrána og breyttu línu 7 þannig að hún líti svona út:
+     ```python
+     os.system("python esptool/esptool.py --chip esp32s3 --baud 2000000 write_flash -z 0 ESP32_GENERIC_S3-20231005-v1.21.0.bin")
+     ```
+     4. Lokaðu ritlinum (e. editor) sem þú notaðir til að breyta línunni og vertu áfram í skipanalínunni úr lið 2.
+     5. Keyrðu svo þaðan eftirfarandi skipunina `python3 ÞITT_STYRIKERFI.py`
         - Ef þú færð villumeldingu frá Windows um að Python finnist ekki, notaðu þá Microsoft Store til að setja Python upp aftur.
-     1. Hinkraðu meðan að keyrslan klárast og smelltu svo á rauða STOP takkann í Thonny og sjáðu hvort þetta er ekki bara komið inn.
+     6. Hinkraðu meðan að keyrslan klárast og smelltu svo á rauða STOP takkann í Thonny og sjáðu hvort þetta er ekki bara komið inn.
 ## Halló heimur (blikk) í MicroPython
 
 Smelltu á hamborgara táknið sem er við *MycroPython device* og veldu *New file...*. Gefðu skránni nafnið `main.py` (skráin verður að heita main.py). Settu svo eftirfarandi kóða í main.py:
