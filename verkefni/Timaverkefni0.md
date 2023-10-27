@@ -16,13 +16,13 @@
    1. Veldu svo *Interpreter* flipann og veldu þar eftirfarandi:
 
         ![thonny02](../myndir/thonny_02.png)
-   1. Gerðu eftirfarandi stillingar í glugganum sem birtist og smelltu svo á *Install* takkann. Passaðu að velja alltaf nýjustu útgáfuna (e. version).
+   1. Gerðu eftirfarandi stillingar í glugganum sem birtist og smelltu svo á *Install* takkann. :warning: Passaðu að velja alltaf nýjustu útgáfuna (e. version).
 
         ![thonny03](../myndir/thonny_03.png)
    1. Uppsetningin getur tekið örfáar mínútur. En þegar stendur *Done* er óhætt að smella á *Close* takkann á glugganum. Og síðan á *OK* á næsta glugga.
 
         ![thonny04](../myndir/thonny_04.png)
-1. Ef allt hefur gengið eins og í sögu þá ætti Thonny að líta svona út hjá þér:
+1. Ef allt hefur gengið eins og í sögu þá ætti Thonny að líta svona út hjá þér (ef þú sérð ekki gluggana vinstra megin þarftu að fara í View og velja þar Files):
    
     ![thonny05](../myndir/thonny_05.png)
 1. Ef þú fékkst upp villur þegar þú reyndir að setja micropython inn á ESP þá skaltu gera eftirfarandi, hafðu kveikt á Thonny:
