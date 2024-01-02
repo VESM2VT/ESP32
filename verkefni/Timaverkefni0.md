@@ -5,8 +5,13 @@
 
 ## Uppsetning á umhverfi fyrir ESP32
 
-1. Sæktu og settu upp hjá þér CH343 rekilinn (e. driver) fyrir ESP32 á tölvuna þína. Þú finnur rekilinn [hér](https://www.wch-ic.com/search?t=all&q=ch343) (CH343SER.EXE fyrir Window, CH34XSER_MAC.ZIP fyrir MacOs). :exclamation: Endurræstu svo tölvuna þína. :exclamation:
-   1. ATH. fyrir linux sjá [hér](https://github.com/Freenove/Freenove_Ultimate_Starter_Kit_for_ESP32_S3/tree/main/CH343/Linux/ch343ser_linux).
+1. Sæktu og settu upp hjá þér CH343 rekilinn (e. driver) fyrir ESP32 á tölvuna þína. Þú finnur rekilinn [hér](https://www.wch-ic.com/search?t=all&q=ch343):
+   - Windows velja CH343SER.EXE
+   - MacOS velja CH34XSER_MAC.ZIP
+      - Eftir að skráin er ræst þarf að fara í *System Settings -> Privacy & Security*, skruna (e. scroll) neðst og smella á Allow takkan. 
+   - Linux sjá [hér](https://github.com/Freenove/Freenove_Ultimate_Starter_Kit_for_ESP32_S3/tree/main/CH343/Linux/ch343ser_linux).
+    
+   :exclamation: Endurræstu svo tölvuna þína. :exclamation:
 1. Sæktu og settu upp hjá þér nýjustu útgáfuna af Thonny, sjá [hér](https://thonny.org).
 1. Settu ESP32-S3 stýritölvuna í samband við tölvuna þína með USB.
 1. Ræstu upp Thonny.
@@ -26,8 +31,8 @@
    
     ![thonny05](../myndir/thonny_05.png)
 1. Ef þú fékkst upp villur þegar þú reyndir að setja micropython inn á ESP þá skaltu gera eftirfarandi, hafðu kveikt á Thonny:
-   1. Sæktu [þessa](https://github.com/Freenove/Freenove_Ultimate_Starter_Kit_for_ESP32_S3/archive/refs/heads/main.zip) .zip skrá og **afþjappaðu** hana (:exclamation:það er ekki nóg að tvísmella á hana, það þarf að hægrismella og velja *Extract all* eða annað álíka).
-   2. Sæktu svo [þessa](https://micropython.org/resources/firmware/ESP32_GENERIC_S3-20231005-v1.21.0.bin) .bin skrá og settu hana í `Freenove_Ultimate_Starter_Kit_for_ESP32_S3/Python/Python_Firmware/` möppuna.
+   1. Sæktu [þessa](https://github.com/Freenove/Freenove_Ultimate_Starter_Kit_for_ESP32_S3/archive/refs/heads/main.zip) .zip skrá og **afþjappaðu** hana ( :exclamation: það er ekki nóg að tvísmella á hana, það þarf að hægrismella og velja *Extract all* eða annað álíka).
+   2. Sæktu svo [þessa](https://micropython.org/resources/firmware/ESP32_GENERIC_S3-20231227-v1.22.0.bin) .bin skrá og settu hana í `Freenove_Ultimate_Starter_Kit_for_ESP32_S3/Python/Python_Firmware/` möppuna.
    3. Opnaðu skipanalínuna (*powershell* í windows, *terminal* í MacOS og Linux) á fartölvunni þinni og færðu þig í möppuna sem þú afþjappaðir skrána í lið 1.
      1. Ef skráin er í *Downloads* möppunni má gera eftirfarandi í skipanalínunni til að færa sig þangað: 
          - Windows: `cd ~\Downloads`
@@ -35,7 +40,7 @@
      2. Færðu þig svo í skipanalínunni í möppuna `Freenove_Ultimate_Starter_Kit_for_ESP32_S3/Python/Python_Firmware/`.
      3. Opnaðu `ÞITT_STYRIKERFI.py` skrána og breyttu línu 7 þannig að hún líti svona út:
      ```python
-     os.system("python esptool/esptool.py --chip esp32s3 --baud 2000000 write_flash -z 0 ESP32_GENERIC_S3-20231005-v1.21.0.bin")
+     os.system("python esptool/esptool.py --chip esp32s3 --baud 2000000 write_flash -z 0 ESP32_GENERIC_S3-20231227-v1.22.0.bin")
      ```
      4. Lokaðu ritlinum (e. editor) sem þú notaðir til að breyta línunni og vertu áfram í skipanalínunni úr lið 2.
      5. Keyrðu svo þaðan eftirfarandi skipunina `python3 ÞITT_STYRIKERFI.py`
