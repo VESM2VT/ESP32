@@ -86,7 +86,7 @@ Takkinn í dæminu hér að ofan mætti alveg virka betur. Ástæðan fyrir þv�
 
 ![bounce](https://upload.wikimedia.org/wikipedia/commons/a/ac/Bouncy_Switch.png)
 
-Á þeim stutta tíma sem líður frá því við ýtum á takkann og þar til við sleppum honum þá keyrir `while True:` lykkjan okkar í nokkur hundruð skipti.
+Einnig á þeim stutta tíma sem líður frá því við ýtum á takkann og þar til við sleppum honum þá keyrir `while True:` lykkjan okkar í nokkur hundruð skipti.
 
 Til að laga þetta þurfum við að bæta kóða við hjá okkur sem útfærir það sem kallast debounce. Einfaldasta útgáfan af því er að vera með breytu sem heldur utan um hver staðan var á takkanum í síðasta skipti sem `while True:` lykkjan okkar keyrði. Dæmi:
 
