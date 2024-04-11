@@ -4,8 +4,7 @@ Stafrænt merki bera upplýsingar eða gögn á tvíundarformi í formi bita (0 
 
 Hliðrænt merki (analog signal) er eins konar samfellt bylgjuform sem breytist með tímanum. Hliðrænu merki er lýst með; sveifluhæð, tíðni og bylgjulengd. Dæmi um einfalt hliðrænt merki er sinusbylgjan. Hliðrænt merki er næmara fyrir truflunum og getur haft óendanlegt gildissvið. 
 
-Hér er [myndband](https://youtu.be/WxJKXGugfh8?t=29) sem skýrir muninn á analog og digital merki.
-
+Hér er [myndband](https://youtu.be/WxJKXGugfh8?t=29) sem skýrir muninn á analog og digital merki
 
 ![AnalogSignal](https://github.com/VESM2VT/Efni/blob/main/Myndir/AnalogSignal.png)  ![DigitalSignal](https://github.com/VESM2VT/Efni/blob/main/Myndir/DigitalSignal.png)
 
@@ -15,9 +14,7 @@ Hér er [myndband](https://youtu.be/WxJKXGugfh8?t=29) sem skýrir muninn á anal
 
 Hliðræn vinnsla merkja byggist á eðlisfræðilegum eiginleikum íhlutanna í tækinu, sér í lagi samhengi spennu og straums. Með þeim hætti þróuðust tækjaeiningar eins og; síur, magnarar, skynjarar og mótarar.
 
-Hliðrænt merki er fólgið í breytilegri spennu og straumi, er sveiflast sem eftirmynd þess sem kemur frá uppsprettunni. Spennusveifla frá hljóðnema hermir eftir loftsveiflum hljóðsins, svo dæmi sé tekið. <br>
-
-Hér er grein sem fjallar nánar um [analog og digital skynjara](https://iot4beginners.com/analog-sensors-vs-digital-sensors/)
+Hliðrænt merki er fólgið í breytilegri spennu og straumi, er sveiflast sem eftirmynd þess sem kemur frá uppsprettunni. Spennusveifla frá hljóðnema hermir eftir loftsveiflum hljóðsins, svo dæmi sé tekið. Hér er [myndband](https://www.youtube.com/watch?v=64FSgQdWHrE) sem skýrir þetta nánar og grein sem fjallar um [analog og digital skynjara](https://iot4beginners.com/analog-sensors-vs-digital-sensors/)
 
 ---
 
