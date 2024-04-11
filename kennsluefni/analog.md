@@ -57,6 +57,7 @@ Tengdu eina LED peru við ESP (muna eftir viðnáminu) og forritaðu hana svo þ
 
 Til umhugsunar: Hvað gerist ef meira en 1023 eða minna en 0 er skrifað á PWM pinna?
 
+<br>
 
 ### Lesið frá pinna
 
