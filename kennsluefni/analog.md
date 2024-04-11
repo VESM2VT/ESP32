@@ -14,7 +14,7 @@ Hér er [myndband](https://youtu.be/WxJKXGugfh8?t=29) sem skýrir muninn á anal
 
 Hliðræn vinnsla merkja byggist á eðlisfræðilegum eiginleikum íhlutanna í tækinu, sér í lagi samhengi spennu og straums. Með þeim hætti þróuðust tækjaeiningar eins og; síur, magnarar, skynjarar og mótarar.
 
-Hliðrænt merki er fólgið í breytilegri spennu og straumi, er sveiflast sem eftirmynd þess sem kemur frá uppsprettunni. Spennusveifla frá hljóðnema hermir eftir loftsveiflum hljóðsins, svo dæmi sé tekið. Hér er [myndband](https://www.youtube.com/watch?v=64FSgQdWHrE) sem skýrir þetta nánar og grein sem fjallar um [analog og digital skynjara](https://iot4beginners.com/analog-sensors-vs-digital-sensors/)
+Hliðrænt merki er fólgið í breytilegri spennu og straumi, er sveiflast sem eftirmynd þess sem kemur frá uppsprettunni. Spennusveifla frá hljóðnema hermir eftir loftsveiflum hljóðsins, svo dæmi sé tekið. Hér er [myndband](https://www.youtube.com/watch?v=64FSgQdWHrE) sem skýrir þetta nánar og grein sem fjallar nánar um [analog og digital skynjara](https://iot4beginners.com/analog-sensors-vs-digital-sensors/)
 
 ---
 
