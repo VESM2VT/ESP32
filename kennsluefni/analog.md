@@ -51,6 +51,8 @@ pwm.duty(511) # skrifar út 1.65V
 pwm.duty(1023) # skrifar út 3.3V
 ```
 
+> [Pulse-Width Modulation tutorial](https://learn.adafruit.com/micropython-hardware-analog-i-o/pulse-width-modulation)
+
 #### Verkefni: Andandi LED
 
 Tengdu eina LED peru við ESP (muna eftir viðnáminu) og forritaðu hana svo þannig að birtan smá aukist þar til fullum styrk (1023) er náð og þá á birtan að minnka þar ljósið slokknar (0). Þetta á svo að endurtaka sig í sífellu. ATH. leystu þetta með því að nota aðeins eina lykkju (`while True:` lykkjuna). Hafðu smá `sleep` í lykkjunni (1 eða 2 millisekúndur).
