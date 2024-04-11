@@ -30,6 +30,8 @@ er talnaruna, skrá yfir hæfilega þétt tekin gildi hliðræna merkisins.
 **DAC** (digital analog converter) breytir stafrænu merki í hliðrænt. Merkið verður þá
 aftur hliðrun í spennu og straumi. 
 
+---
+
 ## Unnið með hliðræn gildi í ESP32
 
 ### Skrifað á pinna
@@ -54,6 +56,7 @@ pwm.duty(1023) # skrifar út 3.3V
 Tengdu eina LED peru við ESP (muna eftir viðnáminu) og forritaðu hana svo þannig að birtan smá aukist þar til fullum styrk (1023) er náð og þá á birtan að minnka þar ljósið slokknar (0). Þetta á svo að endurtaka sig í sífellu. ATH. leystu þetta með því að nota aðeins eina lykkju (`while True:` lykkjuna). Hafðu smá `sleep` í lykkjunni (1 eða 2 millisekúndur).
 
 Til umhugsunar: Hvað gerist ef meira en 1023 eða minna en 0 er skrifað á PWM pinna?
+
 
 ### Lesið frá pinna
 
