@@ -51,11 +51,12 @@ Síðan þegar ýtt er á takkana:
 print(takki_A.value()) # Skrifar út 1
 print(takki_B.value()) # Skrifar út 0
 ```
-
+<!--
 ### Æfingaverkefni
 
 1. Settu upp á brauðbretti eina LED peru (muna eftir viðnáminu) og einn takka (takkinn á að vera tengdur sem `PULL_DOWN`). Forritaðu svo rásina þannig að þegar ýtt er á takkan á að kveikna á LED perunni. 
 2. Þegar liður 1 virkar hjá þér skaltu bæta við annarri LED peru og öðrum takka (`PULL_UP` tenging). Forritaðu svo þannig að það er alltaf kveikt á LED perunni nema þegar ýtt er á takkan en þá á að slökkna á perunni.
+-->
 
 ## Rofar
 
