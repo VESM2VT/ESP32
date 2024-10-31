@@ -53,11 +53,13 @@ pwm.duty(1023) # skrifar út 3.3V
 
 > [Pulse-Width Modulation tutorial](https://learn.adafruit.com/micropython-hardware-analog-i-o/pulse-width-modulation)
 
+<!--
 #### Verkefni: Andandi LED
 
 Tengdu eina LED peru við ESP (muna eftir viðnáminu) og forritaðu hana svo þannig að birtan smá aukist þar til fullum styrk (1023) er náð og þá á birtan að minnka þar ljósið slokknar (0). Þetta á svo að endurtaka sig í sífellu. ATH. leystu þetta með því að nota aðeins eina lykkju (`while True:` lykkjuna). Hafðu smá `sleep` í lykkjunni (1 eða 2 millisekúndur).
 
 Til umhugsunar: Hvað gerist ef meira en 1023 eða minna en 0 er skrifað á PWM pinna?
+-->
 
 <br>
 
@@ -80,9 +82,10 @@ pinni = ADC(Pin(1), atten=ADC.ATTN_11DB)
 # sjálfgefið eru ADC 12 bita og gefa því gildi á bilinu 0 til og með 4095
 gildi = pinni.read()
 ```
-
+<!--
 #### Verkefni: Ljósmagni stjórnað með stilliviðnámi
 
 Settu upp þessa [rás](../myndir/pwm_adc_stillivinam_led.png) og  forritaðu þannig að stilliviðnámið stjórni birtumagninu á LED perunni. 
 
 :exclamation: Gildið sem þú lest frá stilliviðnáminu er frá 0 til og með 4095 en gildin sem þú skrifar á LED peruna verða að vera frá 0 til og með 1023.  
+-->
