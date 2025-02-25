@@ -28,7 +28,7 @@ aftur hliðrun í spennu og straumi.
 
 ---
 
-## Unnið með hliðræn gildi í ESP32
+# Unnið með hliðræn gildi í ESP32
 
 ### Skrifað á pinna
 
