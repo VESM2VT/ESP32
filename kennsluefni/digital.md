@@ -38,7 +38,7 @@ takki_A = Pin(13, Pin.IN, Pin.PULL_DOWN)
 takki_B = Pin(14, Pin.IN, Pin.PULL_UP)
 ```
 
-Þetta virkar þá þannig þegar ekki er ýtt á takkana:
+Þetta virkar þá þannig þegar **ekki** er ýtt á takkana:
 
 ```python
 print(takki_A.value()) # Skrifar út 0
