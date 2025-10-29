@@ -47,7 +47,8 @@ pwm.duty(511) # skrifar út 1.65V
 pwm.duty(1023) # skrifar út 3.3V
 ```
 
-> [Pulse-Width Modulation tutorial](https://learn.adafruit.com/micropython-hardware-analog-i-o/pulse-width-modulation)
+> [Pulse-Width Modulation tutorial](https://learn.adafruit.com/micropython-hardware-analog-i-o/pulse-width-modulation) <br>
+> Wikipedia: [PWM](https://en.wikipedia.org/wiki/Pulse-width_modulation) og [Duty cycle](https://en.wikipedia.org/wiki/Pulse-width_modulation#Duty_cycle)
 
 <!--
 #### Verkefni: Andandi LED
