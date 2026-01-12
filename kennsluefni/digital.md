@@ -29,7 +29,7 @@ Almennt þegar unnið er með takka þá viljum við að pinnarnir séu með fyr
 
 ![pullup_pulldown](../myndir/pullup_pulldown.png)
 
-Takki A er tengdur fyrir `PULL_DOWN` en takki B fyrir `PULL_UP`. Í kóðanum er þetta svo skilgreint svona:
+**Takki A** er tengdur fyrir `PULL_DOWN` en **takki B** fyrir `PULL_UP`. Í kóðanum er þetta svo skilgreint svona:
 
 ```python
 from machine import Pin
