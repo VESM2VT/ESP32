@@ -4,7 +4,7 @@ Stafrænt merki bera upplýsingar eða gögn á tvíundarformi í formi bita (0 
 
 Hliðrænt merki (analog signal) er eins konar samfellt bylgjuform sem breytist með tímanum. Hliðrænu merki er lýst með; sveifluhæð, tíðni og bylgjulengd. Dæmi um einfalt hliðrænt merki er sinusbylgjan. Hliðrænt merki er næmara fyrir truflunum og getur haft óendanlegt gildissvið. 
 
-Hér er [myndband](https://youtu.be/WxJKXGugfh8?t=29) sem skýrir muninn á analog og digital merki
+<!-- Hér er [myndband](https://youtu.be/WxJKXGugfh8?t=29) sem skýrir muninn á analog og digital merki -->
 
 ![AnalogSignal](https://github.com/VESM2VT/Efni/blob/main/Myndir/AnalogSignal.png)  ![DigitalSignal](https://github.com/VESM2VT/Efni/blob/main/Myndir/DigitalSignal.png)
 
