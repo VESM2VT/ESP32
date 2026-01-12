@@ -8,13 +8,14 @@ Hliðrænt merki (analog signal) er eins konar samfellt bylgjuform sem breytist 
 
 ![AnalogSignal](https://github.com/VESM2VT/Efni/blob/main/Myndir/AnalogSignal.png)  ![DigitalSignal](https://github.com/VESM2VT/Efni/blob/main/Myndir/DigitalSignal.png)
 
-## Skynjarar
-
-Hliðræn vinnsla merkja byggist á eðlisfræðilegum eiginleikum íhlutanna í tækinu, sér í lagi samhengi spennu og straums. Með þeim hætti þróuðust tækjaeiningar eins og; síur, magnarar, skynjarar og mótarar.
-
-Hliðrænt merki er fólgið í breytilegri spennu og straumi, er sveiflast sem eftirmynd þess sem kemur frá uppsprettunni. Spennusveifla frá hljóðnema hermir eftir loftsveiflum hljóðsins, svo dæmi sé tekið. Hér er [myndband](https://www.youtube.com/watch?v=64FSgQdWHrE) sem skýrir þetta nánar.
-
 ## Stafræn- og hliðræn merkjavinnsla (ADC og DAC)
+
+<!--
+Hliðræn vinnsla merkja byggist á eðlisfræðilegum eiginleikum íhlutanna í tækinu, sér í lagi samhengi spennu og straums. Með þeim hætti þróuðust tækjaeiningar eins og; síur, magnarar, skynjarar og mótarar.
+-->
+
+Hliðrænt merki er fólgið í breytilegri spennu og straumi, er sveiflast sem eftirmynd þess sem kemur frá uppsprettunni. Spennusveifla frá hljóðnema hermir eftir loftsveiflum hljóðsins, svo dæmi sé tekið. 
+<!-- Hér er [myndband](https://www.youtube.com/watch?v=64FSgQdWHrE) sem skýrir þetta nánar. -->
 
 Hliðrænt merki sem tekur samfelldum breytingum rennir sér í gegn um óendanlega mörg mæligildi. Augljóslega er ekki vinnandi vegur að skrá þau öll. Því hraðari sem breytingarnar á hliðræna merkinu eru, því styttra þarf að líða á milli þess að sýni séu tekin. Sýnataka er gerð með jöfnu millibili, öllum gildum merkisins þar á milli er fleygt. <br>
 
