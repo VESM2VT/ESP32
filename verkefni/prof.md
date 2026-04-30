@@ -19,6 +19,7 @@
 
 ## Verkefni 6
 - [Stýripinninn](https://lastminuteengineers.com/joystick-interfacing-arduino-processing/)
+- [Rofi og Debounce](https://github.com/VESM2VT/ESP32/blob/main/kennsluefni/digital.md#debounce)
 - [ADC](https://github.com/VESM2VT/ESP32/blob/main/kennsluefni/analog.md#lesi%C3%B0-fr%C3%A1-pinna), PWM.
 - [OLED skjárinn](https://randomnerdtutorials.com/micropython-oled-display-esp32-esp8266/)
 - [I<sup>2</sup>C staðallinn](https://www.circuitbasics.com/basics-of-the-i2c-communication-protocol/).
